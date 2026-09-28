@@ -6,10 +6,6 @@
 #include <toml++/toml.hpp>
 
 namespace config {
-// TODO сделать импорт из симейка
-constexpr auto APP_NAME         = "tsend";
-constexpr auto CONFIG_FILE_NAME = "config.toml";
-
 enum RunState { CLI, TUI };
 
 struct config {

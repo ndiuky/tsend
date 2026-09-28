@@ -1,0 +1,8 @@
+#pragma once
+
+#include <string_view>
+
+namespace config {
+constexpr std::string_view APP_NAME         = "@PROJECT_NAME@";
+constexpr std::string_view CONFIG_FILE_NAME = "@CONFIG_FILE_NAME@";
+}; // namespace config

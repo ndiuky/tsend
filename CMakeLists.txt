@@ -13,7 +13,11 @@ add_executable(${PROJECT_NAME})
 file(GLOB_RECURSE sources CONFIGURE_DEPENDS "${root}/src/*.cpp")
 file(GLOB_RECURSE headers CONFIGURE_DEPENDS "${root}/src/*.hpp")
 
+list(APPEND CMAKE_MODULE_PATH "${root}/cmake")
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
+include(options)
+
+configure_file(${root}/src/static.hpp.in ${root}/src/static.hpp @ONLY IMMEDIATE)
 
 target_sources(${PROJECT_NAME} PRIVATE ${sources})
 target_sources(${PROJECT_NAME} PRIVATE

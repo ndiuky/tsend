@@ -9,6 +9,8 @@
 #include <toml++/impl/table.hpp>
 #include <toml++/toml.hpp>
 
+#include "static.hpp"
+
 namespace config {
 auto init() -> std::unique_ptr<config const> {
   auto cfg               = std::make_unique<config>();
