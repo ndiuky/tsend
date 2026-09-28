@@ -4,3 +4,6 @@
 [submodule "libs/tomlplusplus"]
 	path = libs/tomlplusplus
 	url = https://github.com/marzer/tomlplusplus.git
+[submodule "libs/cpp-tui"]
+	path = libs/cpp-tui
+	url = https://github.com/jonoton/cpp-tui

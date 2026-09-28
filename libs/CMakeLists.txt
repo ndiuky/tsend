@@ -13,6 +13,10 @@ list(APPEND _libs tomlplusplus)
 add_subdirectory(httplib)
 list(APPEND _libs httplib)
 
+# --- tui ---
+add_subdirectory(cpp-tui)
+list(APPEND _libs cpptui::cpptui)
+
 # --- target ---
 add_library(tb_libs INTERFACE)
 add_library(tb::libs ALIAS tb_libs)
