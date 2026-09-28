@@ -6,3 +6,7 @@ namespace config {
 constexpr std::string_view APP_NAME         = "@PROJECT_NAME@";
 constexpr std::string_view CONFIG_FILE_NAME = "@CONFIG_FILE_NAME@";
 }; // namespace config
+
+namespace telegram {
+constexpr std::string_view API_HOST = "@API_HOST@";
+}; // namespace telegram

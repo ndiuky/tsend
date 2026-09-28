@@ -7,7 +7,6 @@
 
 namespace telegram {
 // TODO вынести в конфиг
-constexpr std::string_view API_HOST{ "https://api.telegram.org" };
 
 enum ParseMod { MARKDOWN, MARKDOWN_V2, HTML };
 

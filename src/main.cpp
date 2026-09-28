@@ -4,7 +4,7 @@
 
 #include "config.hpp"
 #include "httplib.h"
-#include "telegram.hpp"
+#include "static.hpp"
 
 int main(int argc, char *argv[]) {
   auto const cfg    = config::init();
